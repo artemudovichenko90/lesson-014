@@ -1,0 +1,67 @@
+:root {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(./../images/caffee.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #262626;
+  color: white;
+}
+
+.logo {
+  font-style: italic;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.5em;
+  text-transform: capitalize;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__item + .menu__item{
+  margin-left: 1em;
+}
+
+
+.btn-contact {
+  padding: 1em 1.5em;
+  border: solid 1px white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #262626;
+  color: white;
+  box-shadow: 0px 0px 2px 0px #ffffff;
+  cursor: pointer;
+}
+
+/* По бэм мы не можем менять внешнюю геометрию у блока
+Поэтому я использую Микс*/
+.header__logo,
+.header__btn-contact {
+  margin: 20px 30px;
+}
+
+/* Не задаю margin по-вертикали, чтоб стало так же как на картинке для телефона */
+.header__menu {
+  margin: 0 30px;
+}
